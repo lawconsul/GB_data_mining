@@ -9,10 +9,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ico_parser'
+BOT_NAME = 'hh_parser'
 
-SPIDER_MODULES = ['ico_parser.spiders']
-NEWSPIDER_MODULE = 'ico_parser.spiders'
+SPIDER_MODULES = ['hh_parser.spiders']
+NEWSPIDER_MODULE = 'hh_parser.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) ' \
@@ -51,13 +51,13 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 5
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'ico_parser.middlewares.IcoParserSpiderMiddleware': 543,
+#    'hh_parser.middlewares.IcoParserSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'ico_parser.middlewares.IcoParserDownloaderMiddleware': 543,
+#    'hh_parser.middlewares.IcoParserDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -69,7 +69,7 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 5
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'ico_parser.pipelines.IcoParserPipeline': 300,
+   'hh_parser.pipelines.IcoParserPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
